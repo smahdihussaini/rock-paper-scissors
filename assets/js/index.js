@@ -44,7 +44,6 @@ function showResult() {
   } else if (userChoice === "scissors" && computerChoice === "paper") {
     winner = "user";
   }
-  console.log(winner);
   addPoint(winner);
   resultDisplay.innerHTML =
     winner === "draw" ? "DRAW" : winner === "computer" ? "LOSE" : "WIN";
