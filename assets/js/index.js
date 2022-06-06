@@ -44,9 +44,10 @@ function showResult() {
   } else if (userChoice === "scissors" && computerChoice === "paper") {
     winner = "user";
   }
+  console.log(winner);
   addPoint(winner);
   resultDisplay.innerHTML =
-    winner === "draw" ? "DRAW" : winner === çomputer ? "LOSE" : "WIN";
+    winner === "draw" ? "DRAW" : winner === "computer" ? "LOSE" : "WIN";
 }
 
 function addPoint(winner) {
@@ -56,15 +57,17 @@ function addPoint(winner) {
   } else if (winner === "user") {
     scoreBoard = document.getElementById("user-score");
   }
-  let currentScore = parseInt(scoreBoard.innerText);
-  currentScore += 1;
-  scoreBoard.innerText = currentScore;
-  if (currentScore === 5) {
-    if (winner === "computer") {
-      alert("You Lose!");
-    } else if (winner === "user") {
-      alert("You Win!");
+  if (scoreBoard) {
+    let currentScore = parseInt(scoreBoard.innerText);
+    currentScore += 1;
+    scoreBoard.innerText = currentScore;
+    if (currentScore === 5) {
+      if (winner === "computer") {
+        alert("You Lose!");
+      } else if (winner === "user") {
+        alert("You Win!");
+      }
+      location.reload();
     }
-    location.reload();
   }
 }
