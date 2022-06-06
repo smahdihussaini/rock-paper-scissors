@@ -21,8 +21,8 @@ body {
 }
 .image {
   background-color: #f90;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 @media screen and (min-width: 600px) {
   .btn {
@@ -33,4 +33,10 @@ body {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.footer {
+  background-color: #f90;
+  padding: 10px 0px;
+  color: white;
 }
