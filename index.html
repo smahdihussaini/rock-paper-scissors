@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1 class="font-effect-fire">Rock, Paper, Scissors</h1>
+      <button id="rock" class="btn" title="Rock">
+        <i class="fa fa-hand-rock-o"></i>
+      </button>
+      <button id="paper" class="btn" title="Paper">
+        <i class="fa fa-hand-paper-o"></i>
+      </button>
+      <button id="scissors" class="btn" title="Scissors">
+        <i class="fa fa-hand-scissors-o"></i>
+      </button>
+    </div>
+    <div class="grid-container">
+      <div>
+        <h2>Your Choice: <span id="user-choice"></span></h2>
+        <img
+          id="user-image"
+          class="image"
+          src="assets/images/rps.png"
+          alt="rock paper scissors"
+        />
+        <h2>Your Score: <span id="user-score">0</span></h2>
+      </div>
+      <div>
+        <h2>Computer Choice: <span id="computer-choice"></span></h2>
+        <img
+          class="image"
+          id="computer-image"
+          src="assets/images/rps.png"
+          alt="rock paper scissors"
+        />
+        <h2>Computer Score: <span id="computer-score">0</span></h2>
+      </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
